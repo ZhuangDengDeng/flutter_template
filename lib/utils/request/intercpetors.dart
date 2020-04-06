@@ -2,6 +2,7 @@ import 'dart:collection';
 import 'package:dio/dio.dart';
 import 'package:flustars/flustars.dart';
 import 'package:flutter_template/config/constant.dart';
+import 'package:flutter_template/utils/request/request_loading.dart';
 
 class CacheObject {
   CacheObject(this.response)
@@ -99,5 +100,25 @@ class AuthInterceptor extends Interceptor {
       options.headers["token"] = 'Bearer $accessToken';
     }
     return super.onRequest(options);
+  }
+}
+
+class LoadingInterceptor extends Interceptor {
+  @override
+  Future onRequest(RequestOptions options) {
+    Loading.before(Constant.loadingText);
+    return super.onRequest(options);
+  }
+
+  @override
+  Future onResponse(Response response) {
+    Loading.complete();
+    return super.onResponse(response);
+  }
+
+  @override
+  Future onError(DioError err) {
+    Loading.complete();
+    return super.onError(err);
   }
 }

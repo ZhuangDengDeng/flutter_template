@@ -37,6 +37,9 @@ class DioUtils {
 
     _dio.interceptors.add(AuthInterceptor());
 
+    //请求loading
+    _dio.interceptors.add(LoadingInterceptor());
+
     //如果不是生产环境，开启日志
     if (!Constant.inProduction) {
       _dio.interceptors.add(LogInterceptor(requestBody: false));

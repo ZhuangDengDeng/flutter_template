@@ -10,6 +10,8 @@ class Constant {
   //request
   static String baseUrl = 'http://localhost:3000';
 
+  static const String loadingText = '加载中...';
+
   static const String loginToken = 'daloginTokenta';
   static const String data = 'data';
   static const String message = 'message';
