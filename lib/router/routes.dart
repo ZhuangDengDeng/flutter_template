@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_template/models/page_component.dart';
+import 'package:flutter_template/models/page/page_component.dart';
 import 'package:flutter_template/page/404.dart';
 import 'package:flutter_template/page/home_page/page.dart';
 import 'package:flutter_template/router/router_handler.dart';

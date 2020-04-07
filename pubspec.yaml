@@ -51,9 +51,14 @@ dependencies:
   webview_flutter: ^0.3.19+9
   # Flutter 轮播图 https://github.com/best-flutter/flutter_swiper
   flutter_swiper: ^1.1.6
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # json转化实体类工具
+  json_model: ^0.0.2
+  build_runner: ^1.0.0
+  json_serializable: ^2.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
