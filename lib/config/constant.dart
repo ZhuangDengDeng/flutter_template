@@ -7,6 +7,8 @@ class Constant {
   //测试环境
   static bool isTest = false;
 
+  static const List<String> supportLanguage = ['zh', 'en'];
+
   //request
   static String baseUrl = 'http://localhost:3000';
 
