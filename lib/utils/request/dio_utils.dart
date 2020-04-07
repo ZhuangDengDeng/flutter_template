@@ -131,12 +131,12 @@ class DioUtils {
     }
   }
 
-  _onError(int code, String msg, Function(int code, String mag) onError) {
+  _onError(int code, String msg, Function(int code, String msg) onError) {
     if (code == null) {
       code = ExceptionHandle.unknown_error;
       msg = "未知异常";
     }
-    Log.e("接口请求异常： code: $code, mag: $msg");
+    Log.e("接口请求异常： code: $code, msg: $msg");
     if (onError != null) {
       onError(code, msg);
     }
