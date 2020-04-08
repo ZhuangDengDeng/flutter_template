@@ -59,12 +59,17 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test: ^1.9.4
   # json转化实体类工具
   json_model: ^0.0.2
   build_runner: ^1.0.0
   json_serializable: ^2.0.0
   # 国际化
   intl_translation: ^0.17.2
+  # 测试用例覆盖率
+  test_coverage: ^0.4.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
